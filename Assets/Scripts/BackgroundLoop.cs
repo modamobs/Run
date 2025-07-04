@@ -4,10 +4,13 @@
 public class BackgroundLoop : MonoBehaviour {
     private float width; // 배경의 가로 길이
 
-    private void Awake() {
+
+    private void Awake()
+    {
         // BoxCollider2D 컴포넌트의 Size 필드의 X 값을 가로 길이로 사용
         BoxCollider2D backgroundCollider = GetComponent<BoxCollider2D>();
         width = backgroundCollider.size.x;
+        
     }
 
     private void Update() {
